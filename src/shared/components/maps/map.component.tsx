@@ -12,6 +12,8 @@ import Button from '@material-ui/core/Button';
 export default function Map() {
   const [newPath, setNewPath] = useState('')
 
+  
+
   return (
     <LoadScript
       id="map-script-loader"
@@ -21,10 +23,12 @@ export default function Map() {
         mapContainerStyle={{ width: "100%", height: "90vh" }}
         zoom={17}
         center={{ lat: 46.529724, lng: 6.600819 }}
+        onClick={event => console.log( JSON.stringify(event.latLng.toJSON(), null, 2))}
       >
         <Button variant="contained" color="primary" className='button'>
           Create a Flight Plan
         </Button>
+        <Polyline path={newPath} />
       </GoogleMap>
     
     </LoadScript>
