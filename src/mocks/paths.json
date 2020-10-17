@@ -1,0 +1,56 @@
+[
+  {
+    "planId": 1,
+    "planName": "Optical scanning",
+    "description": "1st test using the new optical camera sensor",
+    "timeStamp": "string",
+    "category": "scan",
+    "path": [
+      {
+        "pointId": 1,
+        "point": "string",
+        "height": "40",
+        "cordinates": {
+          "latitude": 34,
+          "longitude": 35
+        }
+      },
+      {
+        "pointId": 2,
+        "point": "string",
+        "height": "40",
+        "cordinates": {
+          "latitude": 34.5,
+          "longitude": 35.5
+        }
+      }
+    ]
+  },
+  {
+    "planId": 2,
+    "planName": "Thermal scanner",
+    "description": "Termal scanner done to identify hotspots in our construction site",
+    "timeStamp": "string",
+    "category": "thermal",
+    "path": [
+      {
+        "pointId": 1,
+        "point": "string",
+        "height": "40",
+        "cordinates": {
+          "latitude": 34.2,
+          "longitude": 35.2
+        }
+      },
+      {
+        "pointId": 2,
+        "point": "string",
+        "height": "40",
+        "cordinates": {
+          "latitude": 34.3,
+          "longitude": 35.3
+        }
+      }
+    ]
+  }
+]
