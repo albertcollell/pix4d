@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import FlightPlans from '../../mocks/paths.json'
-import PathCard from './../../shared/components/card/path-card.component'
+import FlightPlans from '../../mocks/paths.json';
+import PathCard from './../../shared/components/card/path-card.component';
+import Map from './../../shared/components/maps/map.component';
 import { IFlightPlan } from './../../core/models/path';
 
 
@@ -20,9 +21,9 @@ export default function SimpleTableView() {
             {paths.map((path:any) => <PathCard flightPath={path}/>)}
           </div>
           <div className="map-column">
-            
+            <Map />
           </div>
-    
+  
       </div>
     );
   }
