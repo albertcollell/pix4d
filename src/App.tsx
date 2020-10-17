@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="header" />
-      <body>
+      <body className='body'>
         <FlightPlan />
       </body>
     </div>

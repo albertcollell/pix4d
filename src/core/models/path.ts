@@ -1,3 +1,4 @@
+
 export interface IFlightPlan {
     planId: number;
     planName: string;
@@ -9,7 +10,12 @@ export interface IFlightPlan {
             pointId: number;
             point: string;
             height: string;
-            cordinates: string;
+            cordinates: {
+                latitude: number;
+                longitude: number;
+              }
             },
     ];
 }
+
+export interface IFlightPlans extends Array<IFlightPlan> {}

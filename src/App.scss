@@ -22,3 +22,18 @@
   color: #61dafb;
 }
 
+.body {
+  .flightplans-view {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .left-column {
+      width: 20%;
+    }
+    .right-column {
+      width: 100px;
+      background-color: black;
+      height: 100%;
+    }
+  }
+}
