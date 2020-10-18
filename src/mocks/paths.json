@@ -10,18 +10,18 @@
         "pointId": 1,
         "point": "string",
         "height": "40",
-        "cordinates": {
-          "latitude": 34,
-          "longitude": 35
+        "coordinates": {
+          "lat": 46.5301342361002,
+          "lng": 6.597793862404786
         }
       },
       {
         "pointId": 2,
         "point": "string",
         "height": "40",
-        "cordinates": {
-          "latitude": 34.5,
-          "longitude": 35.5
+        "coordinates": {
+          "lat": 46.52756553541531,
+          "lng": 6.605143115105592
         }
       }
     ]
@@ -37,18 +37,18 @@
         "pointId": 1,
         "point": "string",
         "height": "40",
-        "cordinates": {
-          "latitude": 34.2,
-          "longitude": 35.2
+        "coordinates": {
+          "lat": 46.52756553541531,
+          "lng": 6.615143115105592
         }
       },
       {
         "pointId": 2,
         "point": "string",
         "height": "40",
-        "cordinates": {
-          "latitude": 34.3,
-          "longitude": 35.3
+        "coordinates": {
+          "lat": 46.5301342361002,
+          "lng": 6.587793862404786
         }
       }
     ]
