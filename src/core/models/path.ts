@@ -10,11 +10,11 @@ export interface IFlightPlan {
             pointId: number;
             point: string;
             height: string;
-            cordinates: {
-                latitude: number;
-                longitude: number;
+            coordinates: {
+                lat: number;
+                lng: number;
               }
-            },
+        }
     ];
 }
 

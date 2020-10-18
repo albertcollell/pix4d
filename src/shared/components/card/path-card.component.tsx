@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
+import {selectFlightPlan} from '../../../core/actions/selected-flight-plan.actions';
 import Card from '@material-ui/core/Card';
 import './path-card.component.scss'
 import CardContent from '@material-ui/core/CardContent';
@@ -25,12 +27,21 @@ const useStyles = makeStyles({
 
 
 
-export default function PathCard(props: {flightPath: IFlightPlan}) {
-  const { flightPath } = props
+export default function PathCard(props: {flightPath: IFlightPlan, setSelectedPath: Function, selectedPath: any}) {
+  
+  const { flightPath, setSelectedPath, selectedPath } = props;
+  const [selection, setSelection] = useState(0);
   const classes = useStyles();
+  
+  const selectPath = (event:any) => {
+    flightPath === selectedPath ? setSelectedPath(undefined) :
+    setSelectedPath(flightPath) 
+  }
+
 
   return (
-    <Card className='card'>
+
+    <Card className='card' onClick={selectPath} >
       <CardContent>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           {flightPath.timeStamp}
