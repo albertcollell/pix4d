@@ -6,14 +6,9 @@ export interface IFlightPlan {
     timeStamp: string;
     category: string;
     path: [
-        {
-            pointId: number;
-            point: string;
-            height: string;
-            coordinates: {
+         {
                 lat: number;
-                lng: number;
-              }
+                lng: number;      
         }
     ];
 }

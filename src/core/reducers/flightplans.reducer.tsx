@@ -9,13 +9,8 @@ const initialState =
       category: "",
       path: [
         {
-          pointId: 0,
-          point: "",
-          height: "",
-          cordinates: {
-            lat: 0,
-            lng: 0
-          }
+          lat: 0,
+          lng: 0
         },
       ]
   }]}
