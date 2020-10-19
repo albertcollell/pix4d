@@ -2,7 +2,7 @@ import React from 'react';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableContainer from '@material-ui/core/TableContainer';
-import CollapsableRow from './../collapsable-row/collapsable-row.component'
+import CollapsableRow from '../collapsablerow/collapsable-row.component'
 import { IFlightPlans } from '../../../core/models/path';
 
 
