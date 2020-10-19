@@ -28,6 +28,7 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
       <TableCell>
           <IconButton
             aria-label="expand row"
+            type='button'
             size="small"
             onClick={() => setOpen(!open)}
           >
@@ -35,7 +36,7 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
           </IconButton>
         </TableCell>
         <TableCell>
-            <Checkbox checked={selected} onClick={selectPath}/>
+            <Checkbox data-test="checkBox" checked={selected} onClick={selectPath}/>
         </TableCell>
         <TableCell className="CellStyle">{flightPlan.planName}</TableCell>
         <TableCell>
@@ -53,7 +54,7 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
           </Collapse>
         </TableCell>
       </TableRow>
-    </>
+      </>
   );
 };
 

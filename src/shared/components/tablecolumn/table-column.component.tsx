@@ -10,6 +10,7 @@ export default function TablePaths(props: {flightPlans: IFlightPlans, setSelecte
   const { flightPlans, setSelectedPath, selectedPath } = props;
   return (
         <TableContainer>
+          <h1>Flight Plans</h1>
           <Table stickyHeader aria-label="sticky table">
             <TableBody>
                 {flightPlans.map(flightPlan =><CollapsableRow key={flightPlan.planId} flightPlan={flightPlan} setSelectedPath={setSelectedPath} selectedPath={selectedPath} />)}
