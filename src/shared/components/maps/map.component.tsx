@@ -16,9 +16,7 @@ import Fab from "@material-ui/core/Fab";
 import {
   GoogleMap,
   LoadScript,
-  Polyline,
-  Marker,
-  
+  Polyline, 
 } from "@react-google-maps/api";
 import { IFlightPlans } from "../../../core/models/path";
 

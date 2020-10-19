@@ -2,13 +2,13 @@ import { shallow } from 'enzyme';
 import React from 'react';
 import * as enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import App from './App';
+import FlightPlan from '../flight-plan';
 
 enzyme.configure({ adapter: new Adapter() });
 
-describe('App', () => {
-  it('renders app without crashing', () => {
-    const wrapper = shallow(<App />);
+describe('FlightPlan', () => {
+  it('renders FlightPlan without crashing', () => {
+    const wrapper = shallow(<FlightPlan />);
     expect(wrapper).toMatchSnapshot();
   });
 });
