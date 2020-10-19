@@ -23,11 +23,7 @@ const flightPlansMockData: IFlightPlans = [
             {
                 lat: 46.5301342361002,
                 lng: 6.597793862404786
-            },
-             {
-                lat: 46.52756553541531,
-                lng: 6.605143115105592
-              }
+            }
           ]
         },
         {
@@ -37,11 +33,6 @@ const flightPlansMockData: IFlightPlans = [
           timeStamp: "string",
           category: "thermal",
           path: [
-            {
-                lat: 46.52756553541531,
-                lng: 6.615143115105592
-              
-            },
              {
                 lat: 46.5301342361002,
                 lng: 6.587793862404786
