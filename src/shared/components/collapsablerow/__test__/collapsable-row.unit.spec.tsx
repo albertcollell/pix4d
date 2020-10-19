@@ -1,6 +1,8 @@
 import React from "react";
 import { mount, ShallowWrapper, ReactWrapper, shallow, configure} from "enzyme";
 import Adapter from 'enzyme-adapter-react-16';
+import TableRow from '@material-ui/core/TableRow';
+import TableCell from '@material-ui/core/TableCell';
 import IconButton from '@material-ui/core/IconButton';
 import CollapsableRow from "../collapsable-row.component";
 import { IFlightPlan } from "../../../../core/models/path";
@@ -10,7 +12,6 @@ let TestComp: ReactWrapper;
 configure({ adapter: new Adapter() })
 
 const setSelectedPath = jest.fn()
-const mockCallBack = jest.fn()
 
 const flightPlanMockData: IFlightPlan = 
         {
@@ -67,21 +68,22 @@ beforeEach(() => {
 
   describe("Table unit test", () => {
     it("has initial div", () => {
-      const divElement = TestComp.find('button');
+      const divElement = TestComp.find('.button');
       expect(divElement).toBeTruthy();
     }); 
     it('Renders Buttons', () => {
       const buttonElement = TestComp.find(IconButton);
       expect(buttonElement).toHaveLength(2)
     });
-    it('Renders Buttons', () => {
-      const buttonElement = TestComp.find("[data-test='checkBox']");
-      buttonElement.simulate("click")
-      expect(mockCallBack.mock.calls.length).toEqual(1);
-
-      expect(buttonElement).toHaveLength(2)
-    });
-
-    
   });
 
+  describe('Test Button component', () => {
+    it('Test click event', () => {
+      const mockCallBack = jest.fn();
+      const TestIconButton = shallow(<IconButton onClick={mockCallBack}/>)
+      const buttonExpand = TestIconButton.find('[data-test="expand-button"]');
+      buttonExpand.forEach(c => {c.simulate('click')
+      expect(mockCallBack).toHaveBeenCalled()});
+      
+    });
+  });

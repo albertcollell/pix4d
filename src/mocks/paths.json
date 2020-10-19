@@ -3,8 +3,8 @@
     "planId": 1,
     "planName": "Optical scanning",
     "description": "1st test using the new optical camera sensor",
-    "timeStamp": "string",
-    "category": "scan",
+    "timeStamp": "2020-10-18 19:16:30",
+    "category": "Optical",
     "path": [
       {
           "lat": 46.5301342361002,
@@ -20,8 +20,8 @@
     "planId": 2,
     "planName": "Thermal scanner",
     "description": "Termal scanner done to identify hotspots in our construction site",
-    "timeStamp": "string",
-    "category": "thermal",
+    "timeStamp": "2020-10-19 19:16:30",
+    "category": "Thermal",
     "path": [
       {
           "lat": 46.52756553541531,
