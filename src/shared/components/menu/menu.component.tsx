@@ -43,14 +43,15 @@ export default function Menu(props: {
   };
 
   const onClickSave = () => {
-    setDisable(true);
     setRecord(false);
     handleClickOpen();
   };
 
+
   const onClickErase = () => {
     setNewPath([]);
     setDisable(!disable);
+    setRecord(false);
   };
 
   const onClickUndo = () => {
@@ -72,6 +73,7 @@ export default function Menu(props: {
     ]);
     setOpen(false);
     setNewPath([]);
+    setDisable(true);
   };
 
   const handleClickOpen = () => {

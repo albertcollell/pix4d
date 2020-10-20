@@ -16,9 +16,10 @@
   justify-content: left;
   text-align: left;
   color: white;
+  align-items: flex-start;
   .logo {
-    width: 100px;
     margin: auto 30px;
+    height: 8vh;
   }
 }
 
