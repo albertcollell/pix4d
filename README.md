@@ -31,7 +31,7 @@ REACT has been used for the front end using some extra libraries to achieve the 
 - Moment
 
 SWAGGER has been used for the data model
-NETLIFY - CI/CD  so it deploys the master branch everytime a new branch is merged.
+NETLIFY for the deployment. it deploys the master branch everytime a new branch is merged to it.
 
 ## Components rendered
 
