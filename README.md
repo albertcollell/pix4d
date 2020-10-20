@@ -1,6 +1,6 @@
 # PIX4D TEST #
 
-Create a visualitzation tool of Flight plans and creation of those.
+Create a visualitzation tool of flight plans.
 
 ## Index
 
@@ -54,6 +54,7 @@ List Column:
 Map:
 * To have a position indicator of your cursor, then you can see at all time the Lat & Lng on the mouse.
 * Zoom adapt to the flightPlan selected.
+* When selecting flight plan, always have the line following the cursor.
 
 Menu:
 * Add Small dialog onHover the buttons to get the name of the action.
@@ -67,6 +68,8 @@ src:
 - mocks: mock data of 2 flightplans.
 - shared: missing service folder since i do not have any service to backend or se
   -components: all components.
+- statics: static files
+- views: renderd components on the screen, really usefull for routing
   
 
 ## Available Scripts
