@@ -1,5 +1,7 @@
 # PIX4D TEST #
 
+Create a visualitzation tool of Flight plans and creation of those.
+
 ## Index
 
 1. Data Model
@@ -8,7 +10,7 @@
 4. Future Improvements
 5. Available Scripts
 
-## Data Model
+## Data model
 
 The data model that has been created to design this application is the following:
 
@@ -16,10 +18,17 @@ The data model that has been created to design this application is the following
 
 ## Architecture
 
-With the Data model set, here is a map of the architecture of the application
+With the data model defined, the architecture thought for this app is the following
 
 
 ![Components_and_state_management_app](https://user-images.githubusercontent.com/33228201/96550629-62bd0c00-12b1-11eb-9b91-9f9a02756934.JPG)
+
+## Tech stack
+
+React has been used for the front end using some extra libraries to achieve the result:
+- googleMaps
+- Material-Ui
+- Moment
 
 ## Components rendered
 
