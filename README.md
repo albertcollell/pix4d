@@ -1,22 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# PIX4D TEST #
 
 ## Index
 
 1. Data Model
-2. Components Map
+2. Architecture
 3. Components Rendered
 4. Future Improvements
 5. Available Scripts
 
 ## Data Model
 
-The data model is based in flightPlan, with the following structure:
+The data model that has been created to design this application is the following:
 
 ![Data-model](https://user-images.githubusercontent.com/33228201/96562024-92bfdb80-12c0-11eb-97e3-5ab86ca59625.JPG)
 
-Array of flightPlans is passed to the application.
+## Architecture
 
-## Components map
+With the Data model set, here is a map of the architecture of the application
+
 
 ![Components_and_state_management_app](https://user-images.githubusercontent.com/33228201/96550629-62bd0c00-12b1-11eb-9b91-9f9a02756934.JPG)
 
