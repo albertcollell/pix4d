@@ -1,5 +1,50 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Index
+
+1. Data Model
+2. Components Map
+3. Components Rendered
+4. Future Improvements
+5. Available Scripts
+
+## Data Model
+
+The data model is based in flightPlan, with the following structure:
+
+![Data-model](https://user-images.githubusercontent.com/33228201/96562024-92bfdb80-12c0-11eb-97e3-5ab86ca59625.JPG)
+
+Array of flightPlans is passed to the application.
+
+## Components map
+
+![Components_and_state_management_app](https://user-images.githubusercontent.com/33228201/96550629-62bd0c00-12b1-11eb-9b91-9f9a02756934.JPG)
+
+## Components rendered
+
+![Application_components](https://user-images.githubusercontent.com/33228201/96563427-3a89d900-12c2-11eb-91b8-a6927517044f.JPG)
+
+## Future improvements
+Application:
+* Create a server and API's to Get and Post data from a database of flightplans
+* Create a Login to Authenticate on the Application and save all flightplans in the database by user, once you log-in you recover saved fligth plans.
+
+Components
+List Column:
+* Add Erase flightPlan functionality.
+* Select multiple flighPlans to display in map.
+* Filter of flightPlans by name, category and date
+* Re-styling the collapsable card.
+
+Map:
+* To have a position indicator of your cursor, then you can see at all time the Lat & Lng on the mouse.
+* Zoom adapt to the flightPlan selected.
+
+Menu:
+* Add Small dialog onHover the buttons to get the name of the action.
+* Re-styling the FAB buttons and make them appear onces Add is activated.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
