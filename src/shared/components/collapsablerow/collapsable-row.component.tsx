@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Table from '@material-ui/core/Table';
+import './collapsable-row.component.scss';
 import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -8,7 +8,6 @@ import IconButton from '@material-ui/core/IconButton';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import { IFlightPlan } from '../../../core/models/path';
-import { TableBody } from '@material-ui/core';
 
 const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Function, selectedPath:any }) => {
 
@@ -24,8 +23,7 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
 
   return (
     <>
-      <Table>
-      <TableBody>
+  
       <TableRow hover role="checkbox" tabIndex={-1} key={flightPlan.planId}>
       <TableCell>
           <IconButton
@@ -38,7 +36,7 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
           </IconButton>
         </TableCell>
-        <TableCell data-test="title" className="CellStyle">{flightPlan.planName}</TableCell>
+        <TableCell data-test="title" className="title">{flightPlan.planName}</TableCell>
         <TableCell>
             <Checkbox data-test="checkBox-button" checked={selected} onClick={selectPath}/>
         </TableCell>
@@ -50,14 +48,13 @@ const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Funct
             unmountOnExit
             className="MuiCollapse-wrapperInner"
           >
-            <p>{flightPlan.description}</p>
-            <p>created: {flightPlan.timeStamp}</p>
-            <p>category: {flightPlan.category}</p>
+            
+            <p className="category">category: {flightPlan.category}</p>
+            <p className="description">{flightPlan.description}</p>
+            <p className="date">created: {flightPlan.timeStamp}</p>
           </Collapse>
         </TableCell>
       </TableRow>
-      </TableBody>
-      </Table>
       
       </>
   );

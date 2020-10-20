@@ -1,5 +1,5 @@
 import React from "react";
-import { mount, ReactWrapper, shallow, configure} from "enzyme";
+import { mount, ReactWrapper, configure} from "enzyme";
 import Adapter from 'enzyme-adapter-react-16';
 import { GoogleMap } from "@react-google-maps/api";
 import Map from "../map.component";

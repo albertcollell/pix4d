@@ -10,7 +10,6 @@ let TestComp: ReactWrapper;
 configure({ adapter: new Adapter() })
 
 const setRecordMock = jest.fn()
-const setCursorMock = jest.fn()
 const setNewPathMock = jest.fn() 
 const setFlightPlansMock = jest.fn()
 
