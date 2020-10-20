@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import mapStyles from "../../../common/maps.config.json";
 import "./map.component.scss";
 import Menu from "../menu/menu.component";
@@ -19,6 +19,10 @@ export default function Map(props: {
   const [recordOn, setRecord] = useState<boolean>(false);
   const [newPath, setNewPath] = useState<ICoordinates>([]);
   const [cursor, setCursor] = useState<string>("default");
+
+  useEffect(() => {
+    recordOn ? setCursor("crosshair") : setCursor('default')
+  },[recordOn]);
 
   const defaultMapOptions = {
     styles: mapStyles,
@@ -59,7 +63,6 @@ export default function Map(props: {
         {recordOn && <Polyline path={newPath} />}
         <Menu
           setRecord={setRecord}
-          setCursor={setCursor}
           setNewPath={setNewPath}
           setFlightPlans={setFlightPlans}
           newPath={newPath}

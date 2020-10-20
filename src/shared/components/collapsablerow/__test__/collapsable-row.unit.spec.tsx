@@ -1,8 +1,6 @@
 import React from "react";
-import { mount, ShallowWrapper, ReactWrapper, shallow, configure} from "enzyme";
+import { mount, ReactWrapper, shallow, configure} from "enzyme";
 import Adapter from 'enzyme-adapter-react-16';
-import TableRow from '@material-ui/core/TableRow';
-import TableCell from '@material-ui/core/TableCell';
 import IconButton from '@material-ui/core/IconButton';
 import CollapsableRow from "../collapsable-row.component";
 import { IFlightPlan } from "../../../../core/models/path";
