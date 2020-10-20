@@ -38,7 +38,6 @@ export default function Map(props: {
   const getCoordinates = (event: any) => {
     const point = { lat: event.latLng.lat(), lng: event.latLng.lng() };
     recordOn && setNewPath([...newPath, point]);
-    console.log(newPath);
   };
 
   return (
