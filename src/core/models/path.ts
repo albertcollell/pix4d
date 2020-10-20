@@ -1,4 +1,3 @@
-
 export interface IFlightPlan {
     planId: number;
     planName: string;
@@ -6,11 +5,11 @@ export interface IFlightPlan {
     timeStamp: string;
     category: string;
     path: [
-         {
-                lat: number;
-                lng: number;      
-        }
+        {
+            pointId: number;
+            point: string;
+            height: string;
+            cordinates: string;
+            },
     ];
 }
-
-export interface IFlightPlans extends Array<IFlightPlan> {}

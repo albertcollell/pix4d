@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`FlightPlan renders FlightPlan without crashing 1`] = `ShallowWrapper {}`;
