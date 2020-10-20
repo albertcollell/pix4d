@@ -26,12 +26,11 @@ interface ICoordinates extends Array<ICoordinate> {}
 
 export default function Menu(props: {
   setRecord: Function;
-  setCursor: Function;
   setNewPath: Function;
   setFlightPlans: Function;
   newPath: ICoordinates;
 }) {
-  const { setRecord, setCursor, setNewPath, setFlightPlans, newPath } = props;
+  const { setRecord, setNewPath, setFlightPlans, newPath } = props;
   const [disable, setDisable] = useState(true);
   const [open, setOpen] = useState<boolean>(false);
   const [planName, setPlanName] = useState<string>("");
@@ -41,20 +40,17 @@ export default function Menu(props: {
   const onClickAdd = () => {
     setDisable(false);
     setRecord(true);
-    setCursor("crosshair");
   };
 
   const onClickSave = () => {
     setDisable(true);
     setRecord(false);
     handleClickOpen();
-    setCursor("default");
   };
 
   const onClickErase = () => {
     setNewPath([]);
     setDisable(!disable);
-    setCursor("default");
   };
 
   const onClickUndo = () => {

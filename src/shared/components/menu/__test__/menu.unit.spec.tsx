@@ -28,7 +28,6 @@ beforeEach(() => {
     TestComp = mount(
       <Menu 
       setRecord={setRecordMock} 
-      setCursor = {setCursorMock}
       setNewPath={setNewPathMock}
       setFlightPlans= {setFlightPlansMock} 
       newPath = {newPathMock}
