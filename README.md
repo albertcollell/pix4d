@@ -6,9 +6,11 @@ Create a visualitzation tool of Flight plans and creation of those.
 
 1. Data Model
 2. Architecture
-3. Components Rendered
-4. Future Improvements
-5. Available Scripts
+3. Tech stack
+4. Components Rendered
+5. Future Improvements
+6. Folder structure
+7. Available Scripts
 
 ## Data model
 
@@ -57,6 +59,15 @@ Menu:
 * Add Small dialog onHover the buttons to get the name of the action.
 * Re-styling the FAB buttons and make them appear onces Add is activated.
 
+## Folder Structure
+
+src:
+- common: It cointains config jsons.
+- core: Contains all the redux logic that I left prepared for future iterations, not finished yet.
+- mocks: mock data of 2 flightplans.
+- shared: missing service folder since i do not have any service to backend or se
+  -components: all components.
+  
 
 ## Available Scripts
 
