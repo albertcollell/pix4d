@@ -15,14 +15,7 @@ import moment from 'moment';
 import "./menu.component.scss";
 
 import { IFlightPlans } from "../../../core/models/path";
-
-interface ICoordinate {
-  lat: number;
-  lng: number;
-}
-
-interface ICoordinates extends Array<ICoordinate> {}
-
+import { ICoordinates } from "../../../core/models/coordinates";
 
 export default function Menu(props: {
   setRecord: Function;
@@ -31,7 +24,7 @@ export default function Menu(props: {
   newPath: ICoordinates;
 }) {
   const { setRecord, setNewPath, setFlightPlans, newPath } = props;
-  const [disable, setDisable] = useState(true);
+  const [disable, setDisable] = useState<boolean>(true);
   const [open, setOpen] = useState<boolean>(false);
   const [planName, setPlanName] = useState<string>("");
   const [description, setDescription] = useState<string>("");

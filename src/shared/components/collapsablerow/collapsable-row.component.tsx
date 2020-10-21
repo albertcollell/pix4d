@@ -12,8 +12,8 @@ import { IFlightPlan } from '../../../core/models/path';
 const CollapsableRow = (props: { flightPlan: IFlightPlan, setSelectedPath: Function, selectedPath:any }) => {
 
   const { flightPlan, setSelectedPath, selectedPath } = props;
-  const [open, setOpen] = useState(false);
-  const [selected, setSelected] = useState(false)
+  const [open, setOpen] = useState<boolean>(false);
+  const [selected, setSelected] = useState<boolean>(false)
 
   const selectPath = (event:any) => {
     flightPlan === selectedPath ? setSelectedPath(undefined) :
