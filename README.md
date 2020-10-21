@@ -27,7 +27,7 @@ With the data model defined, the architecture thought for this app is the follow
 
 ## Tech stack
 
-REACT has been used for the front end using some extra libraries to achieve the result:
+REACT and Typescript has been used for the front end using some extra libraries to achieve the result:
 - googleMaps
 - Material-Ui
 - Moment
