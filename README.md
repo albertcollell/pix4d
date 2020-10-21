@@ -44,6 +44,9 @@ Application:
 * Create a server and API's to Get and Post data from a database of flightplans
 * Create a Login to Authenticate on the Application and save all flightplans in the database by user, once you log-in you recover saved fligth plans.
 
+Data Structure:
+* Add more information on everypoint selected like height, speed and point Id...
+
 Components
 List Column:
 * Add Erase flightPlan functionality.
@@ -55,6 +58,8 @@ Map:
 * To have a position indicator of your cursor, then you can see at all time the Lat & Lng on the mouse.
 * Zoom adapt to the flightPlan selected.
 * When selecting flight plan, always have the line following the cursor.
+* Adding Markers at every point you click on the map to generate the polyline and when polyline is shown.
+* Being able to save info on each point like height and speed.
 
 Menu:
 * Add Small dialog onHover the buttons to get the name of the action.
