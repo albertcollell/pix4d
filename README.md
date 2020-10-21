@@ -1,6 +1,7 @@
 # PIX4D TEST #
 
-Create a visualitzation tool of flight plans.
+Create a visualitzation tool of flight plans. 
+Check the DEMO URL: https://pix4dtest-flightplans
 
 ## Index
 
