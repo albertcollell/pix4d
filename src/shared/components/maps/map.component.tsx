@@ -3,16 +3,11 @@ import mapStyles from "../../../common/maps.config.json";
 import "./map.component.scss";
 import Menu from "../menu/menu.component";
 import { GoogleMap, LoadScript, Polyline } from "@react-google-maps/api";
-
-interface ICoordinate {
-  lat: number;
-  lng: number;
-}
-
-interface ICoordinates extends Array<ICoordinate> {}
+import { IFlightPlan, IPath } from '../../../core/models/path';
+import { ICoordinates } from "../../../core/models/coordinates";
 
 export default function Map(props: {
-  selectedPath: any;
+  selectedPath: IFlightPlan;
   setFlightPlans: Function;
 }) {
   const { selectedPath, setFlightPlans } = props;
@@ -56,7 +51,7 @@ export default function Map(props: {
         {/* Painting Polylines of Paths already created */}
         {selectedPath && (
           <Polyline
-            path={selectedPath.path.map((coordinates: any) => coordinates)}
+            path={selectedPath.path.map((coordinates: IPath) => coordinates)}
           />
         )}
         {/* Start recording the new polyline and display it in the map */}
