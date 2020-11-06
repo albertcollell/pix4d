@@ -1,7 +1,7 @@
 # PIX4D TEST #
 
 Create a visualitzation tool of flight plans. 
-Check the DEMO URL: https://pix4dtest-flightplans
+Check the DEMO URL: https://pix4dtest-flightplans.netlify.app/
 
 ## Index
 
